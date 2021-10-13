@@ -27,6 +27,7 @@ import fnmatch
 import unittest
 
 #sphinx-argparse is a delight.
+#nothing to add
 try:
     from rdk import MY_VERSION
 except ImportError:

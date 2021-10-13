@@ -59,7 +59,6 @@ def evaluate_compliance(event, configuration_item, valid_rule_parameters):
             for rds_proxy in rds_proxies['DBProxies']:
                 proxy_name = rds_proxy['DBProxyName']
                 tls_enabled = rds_proxy['RequireTLS']
-                logger.info(f'AWS RDS Proxy Name: {proxy_name}')
                 logging.info(f'TLS enaled status is {tls_enabled} for {proxy_name}')
 
                 if tls_enabled:

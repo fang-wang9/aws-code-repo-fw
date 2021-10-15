@@ -621,7 +621,7 @@ class rdk:
         #Once the config recorder has been deleted there should be no dependencies on the Config Role anymore.
 
         try:
-            response = iam_client.get_role(RoleName=config_role_name)
+            response = iam_client.get_role_1(RoleName=config_role_name)
             try:
                 role_policy_results = iam_client.list_role_policies(RoleName=config_role_name)
                 for policy_name in role_policy_results['PolicyNames']:
